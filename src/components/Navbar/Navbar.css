@@ -1,0 +1,30 @@
+.navbar {
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    margin: 0 auto;
+    border-bottom: 1px solid #cccc;
+    background-color: #fff;
+    align-items: center;
+    z-index: 1000;
+}
+
+.navbar__links__container {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.user__menu {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar_logo {
+    font-weight: bolder;
+}

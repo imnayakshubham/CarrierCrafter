@@ -1,0 +1,1 @@
+export const appRootKey = `carrier-booking-app-root`

@@ -1,0 +1,45 @@
+.carriers__container {
+    margin: 0px auto;
+    padding: 2rem 1rem;
+}
+
+.carriers__list__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.filter__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+}
+
+.table__action {
+    display: flex;
+    gap: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .filter__container {
+        gap: 0.25rem;
+    }
+
+    .table__action>button {
+        margin: 0px !important;
+        padding: 1rem !important;
+    }
+
+    .filter__text,
+    .hide {
+        display: none;
+    }
+
+}

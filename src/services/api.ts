@@ -1,0 +1,1 @@
+export const carriersListApiEndPoint = "https://mocki.io/v1/b174654c-dc79-4ca9-9be3-976a206e145c"

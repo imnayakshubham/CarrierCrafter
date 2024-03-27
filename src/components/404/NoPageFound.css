@@ -1,0 +1,19 @@
+.no__page__found {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.no__page__found__error {
+    font-size: calc(100px + 0.5vw);
+    line-height: 1;
+}
+
+.link {
+    text-decoration: none;
+    color: blue
+}

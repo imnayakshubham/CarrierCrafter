@@ -1,0 +1,47 @@
+.book__carrier__container {
+    display: flex;
+    padding: 2rem 1rem;
+    flex-direction: column;
+    gap: 0.5rem;
+    height: 92vh;
+}
+
+.book__carrier__container__table__action {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem 0rem;
+}
+
+.delete__btn {
+    color: #fff !important;
+    background-color: red !important;
+
+}
+
+.confirm__booking__action {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.empty__cart {
+    height: 100%;
+}
+
+.empty__cart,
+.empty__cart__suggestion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.empty__cart__info {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+/* .empty__cart__suggestion {
+    flex-direction: row;
+} */
