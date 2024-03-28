@@ -28,3 +28,7 @@
 .navbar_logo {
     font-weight: bolder;
 }
+
+a:hover {
+    color: #0000EE;
+}
