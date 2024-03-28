@@ -1,4 +1,3 @@
-import { Button } from "@chakra-ui/react";
 import "./NoPageFound.css";
 import { Link } from "react-router-dom";
 

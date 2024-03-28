@@ -4,7 +4,7 @@ import "./BookingHistory.css"
 import { CustomTable } from '../CustomTable/CustomTable'
 import { RootState } from '../../store/reducer/reducer'
 
-export const BookingHistory = () => {
+const BookingHistory = () => {
     const bookingHistory = useSelector((state: RootState) => state.booking.booking_history?.data)
 
     const columnsData = useMemo(() => {
@@ -26,3 +26,5 @@ export const BookingHistory = () => {
         </div>
     )
 }
+
+export default BookingHistory

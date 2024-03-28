@@ -5,7 +5,7 @@ import { Spinner } from "@chakra-ui/react";
 interface Column<T> {
     title: string;
     dataIndex: string;
-    render?: (text: string, record: T) => React.ReactNode | string;
+    render?: (text: any, record: T) => React.ReactNode;
     className?: string;
 }
 

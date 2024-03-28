@@ -17,7 +17,7 @@ export const Carriers = ({ carriersData, setSelectedCarriers }: CarriersProps) =
     const columnsData = useMemo(() => {
         return [
             { title: 'Name', dataIndex: 'name', className: "hello" },
-            { title: 'Available', dataIndex: 'availability', className: "hello", render: (text: boolean) => text ? "Yes" : "No" },
+            { title: 'Available', dataIndex: 'availability', className: "hello", render: (text: boolean) => <>{text ? "Yes" : "No"}</> },
             { title: 'Delivery Rate', dataIndex: 'onTimeDeliveryPercentage', className: "hello", },
             { title: 'Rating', dataIndex: 'rating', className: "hello" },
             { title: 'Special Requirements', dataIndex: 'specialRequirements', className: "hello" },

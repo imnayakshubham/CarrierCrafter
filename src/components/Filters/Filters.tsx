@@ -1,5 +1,5 @@
 import { Flex, FormControl, FormLabel, Input, Radio, RadioGroup, RangeSlider, RangeSliderFilledTrack, RangeSliderThumb, RangeSliderTrack, Stack, Text } from '@chakra-ui/react'
-import { SetStateAction, useMemo } from 'react'
+import { useMemo } from 'react'
 import ReactSelect from 'react-select';
 import './Filters.css'
 import { useSelector } from 'react-redux';
@@ -56,7 +56,7 @@ const Filters = ({ formData, setFormData }: typeFiltersProp) => {
         setFormData({ ...formData, [name]: value });
     }
 
-    const handleSelectChange = (options: { label: string, value: string }[]) => {
+    const handleSelectChange = (options) => {
         setFormData({ ...formData, specialRequirements: options });
     };
 

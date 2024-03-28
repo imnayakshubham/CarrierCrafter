@@ -11,7 +11,7 @@ import { RootState } from "../../store/reducer/reducer";
 import { AppDispatch } from "../../store/store";
 
 
-export const BookCarriers = () => {
+const BookCarriers = () => {
     const dispatch = useDispatch<AppDispatch>();
     const toast = useToast()
     const navigateTo = useNavigate()
@@ -19,13 +19,11 @@ export const BookCarriers = () => {
     const [selectedCarriers, setSelectedCarriers] = useState<string[]>([])
 
     const carriersCart = useSelector((state: RootState) => state.carriers.carrier_cart)
-    const userInfo = useSelector((state: RootState) => state.user.userInfo?.data)
-
 
     const columnsData = useMemo(() => {
         return [
             { title: 'Name', dataIndex: 'name' },
-            { title: 'Available', dataIndex: 'availability', render: (text: boolean) => text ? "Yes" : "No" },
+            { title: 'Available', dataIndex: 'availability', render: (text: boolean) => <>{text ? "Yes" : "No"}</> },
             { title: 'Delivery Rate', dataIndex: 'onTimeDeliveryPercentage', },
             { title: 'Rating', dataIndex: 'rating' },
             { title: 'Special Requirements', dataIndex: 'specialRequirements' },
@@ -104,3 +102,6 @@ export const BookCarriers = () => {
         </div>
     )
 }
+
+
+export default BookCarriers
