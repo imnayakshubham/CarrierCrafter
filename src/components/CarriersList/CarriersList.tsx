@@ -105,7 +105,7 @@ const CarriersList = () => {
                     <div className="table__action">
                         <CarriersFilterDrawer setFilterData={setFilterData} isOpen={isOpen} setIsOpen={setIsOpen} filterData={filterData} />
                         <Button onClick={handleCarrierBooking} isDisabled={!selectedCarriers.length} >
-                            Book <div className="hide">Carrier</div>
+                            <div className="mobile__view__content">Book</div> <div className="hide">{"Book Carrier"}</div>
                         </Button>
                     </div>
                 </div>
