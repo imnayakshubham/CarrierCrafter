@@ -90,6 +90,7 @@
         width: 100%;
         height: 100%;
         text-align: center !important;
+        font-size: 1.25rem !important;
     }
 
     .custom__table td::before {
