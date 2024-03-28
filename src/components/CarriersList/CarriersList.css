@@ -31,6 +31,8 @@
 
 @media screen and (max-width: 600px) {
 
+
+
     .filter__container {
         gap: 0.25rem;
     }
@@ -47,6 +49,14 @@
     .filter__text,
     .hide {
         display: none;
+    }
+
+    .filter__container {
+        position: sticky;
+        top: 8.5%;
+        background-color: #ffffff;
+        z-index: 10000000;
+        padding: 0.5rem 0rem;
     }
 
 }
